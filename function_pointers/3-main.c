@@ -1,7 +1,12 @@
 #include "3-calc.h"
 #include <stdlib.h>
 #include <stdio.h>
-
+/**
+ * main - function
+ * @argc: arguments counts
+ * @argv: arguments values
+ * Return: integer
+ */
 int main(int argc, char *argv[])
 {
 	if (argc != 4)
