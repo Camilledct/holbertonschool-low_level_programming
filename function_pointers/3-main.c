@@ -5,7 +5,7 @@
  * main - function
  * @argc: arguments counts
  * @argv: arguments values
- * Return: integer
+ * Return: Sucess 0
  */
 int main(int argc, char *argv[])
 {
@@ -30,4 +30,5 @@ int main(int argc, char *argv[])
 	}
 
 	printf("%d\n", get_op_func(argv[2])(atoi(argv[1]), atoi(argv[3])));
+	return (0);
 }
