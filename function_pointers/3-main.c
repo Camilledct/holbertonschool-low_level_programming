@@ -9,16 +9,18 @@
  */
 int main(int argc, char *argv[])
 {
+
+	int (*operation)(int, int);
+
 	if (argc != 4)
 	{
 		printf("Error\n");
 		return (98);
 	}
-	if (argv[2][0] != '+' &&
-		argv[2][0] != '-' &&
-		argv[2][0] != '*' &&
-		argv[2][0] != '/' &&
-		argv[2][0] != '%')
+
+	operation = get_op_func(argv[2]);
+
+	if (operation == NULL)
 	{
 		printf("Error\n");
 		return (99);
